@@ -7,7 +7,14 @@ use Illuminate\Http\Request;
 class PrimPerguntaController extends Controller
 {
 
-    public function escolhendoAlternativas()
+    public function primPergunta()
+    {
+        $perguntas = $this->escolhendoAlternativas();
+
+        return view('primPergunta', compact('perguntas'));
+    }
+
+    private function escolhendoAlternativas(): array
     {
         $alternativas = [
             'alternativas' => [
@@ -50,10 +57,5 @@ class PrimPerguntaController extends Controller
             'alternativa3' => $perguntaAleatoria['alternativa3'],
             'alternativa4' => $perguntaAleatoria['alternativa4']
         ];
-    }
-
-    public function primPergunta()
-    {
-        return view('primPergunta');
     }
 }
