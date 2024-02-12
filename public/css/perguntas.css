@@ -32,10 +32,7 @@ body {
 
   }
 
-  .btn-a,
-  .btn-b,
-  .btn-c,
-  .btn-d {
+  .btn-text button {
     background-color: #0a4b75;
     color: #fff;
     width: 600px;
