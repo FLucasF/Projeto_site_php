@@ -4,14 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PrimPerguntaController extends Controller
+class QuiPerguntaController extends Controller
 {
-
-    public function primPergunta()
+    public function quiPergunta()
     {
         $perguntas = $this->escolhendoAlternativas();
 
-        return view('primPergunta', compact('perguntas'));
+        return view('quiPergunta', compact('perguntas'));
     }
 
     public function escolhendoAlternativas(): array

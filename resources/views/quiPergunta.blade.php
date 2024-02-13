@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <h1>Pergunta Um</h1>
+        <h1>Pergunta Cinco</h1>
             <img src="{{ asset('img/undraw_quiz.svg') }}">
             <p>{{ $perguntas['pergunta'] }}
             </p>

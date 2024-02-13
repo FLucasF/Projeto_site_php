@@ -13,7 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/home', 'HomeController@home')->name('home');
+Route::get('/', 'HomeController@home')->name('home');
 Route::get('/menu', 'MenuController@menu')->name('menu');
 Route::get('/info', 'InfoController@info')->name('info');
 Route::get('/primPergunta', 'PrimPerguntaController@primPergunta')->name('primPergunta');
+Route::get('/segPergunta', 'SegPerguntaController@segPergunta')->name('segPergunta');
+Route::get('/terPergunta', 'TerPerguntaController@terPergunta')->name('terPergunta');
+Route::get('/quaPergunta', 'QuaPerguntaController@quaPergunta')->name('quaPergunta');
+Route::get('/quiPergunta', 'QuiPerguntaController@quiPergunta')->name('quiPergunta');
+
