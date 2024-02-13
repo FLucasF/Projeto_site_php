@@ -7,45 +7,32 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="{{ asset('css/perguntas.css') }}" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="{{ asset('js/organizarPerguntas.js') }}" defer></script>
 </head>
 
 <body>
     <div class="container">
-        <h1>Primeira pergunta</h1>
-        <img src="{{ asset('img/undraw_quiz.svg') }}">
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-        </p>
-        <div class="btn-text">
-            <div class="description">
-                <button class="btn-a">Entrar em contato com o banco utilizando canais oficiais (como app do banco ou telefone do gerente).</button>
+        <h1>{{ $perguntas['pergunta'] }}</h1>
+            <img src="{{ asset('img/undraw_quiz.svg') }}">
+            <p>{{ $perguntas['pergunta'] }}
+            </p>
+            <input id="resposta-correta" value="{{ $perguntas['resposta'] }}" hidden />
+        @foreach($perguntas['alternativas'] as $key => $pergunta)
+            <div class="btn-text">
+                <div class="description">
+                    <button class="btn-a" onclick="verificacao('{{ $key }}', '{{ $perguntas['resposta'] }}')">{{ $pergunta }}</button>
+                </div>
             </div>
-        </div>
-        <div class="btn-text">
-            <div class="description">
-                <button class="btn-b">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</button>
-            </div>
-        </div>
-        <div class="btn-text">
-            <div class="description">
-                <button class="btn-c">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</button>
-            </div>
-        </div>
-        <div class="btn-text">
-            <div class="description">
-                <button class="btn-d">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</button>
-            </div>
-        </div>
+        @endforeach
     </div>
 
     <div class="btn-text">
         <div class="description">
             <a class="btn-voltar" href="/menu">Menu Principal</a>
-
             <!-- <button class="btn-voltar">Menu Principal</button> -->
         </div>
     </div>
 </body>
-
 </html>
