@@ -14,10 +14,10 @@
     <div class="header"><strong>Evite O Golpe</strong></div>
 
     <div class="container">
-        
-            <img src="{{ asset('img/undraw_questions.svg') }}" alt="Quiz">
-            <button class="btn-quiz">Iniciar Quiz</button>
-            <button class="btn-info">Mais Informações</button>
+
+        <img src="{{ asset('img/undraw_questions.svg') }}" alt="Quiz">
+        <a href="/"><button class="btn-quiz">Iniciar Quiz</button></a>
+        <a href="/info"><button class="btn-info">Mais Informações</button></a>
 
     </div>
 

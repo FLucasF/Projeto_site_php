@@ -17,7 +17,7 @@
             <h1>Evite O Golpe</h1>
             <p>Descrição do aplicativo</p>
             <p>Já está pronto? vamos lá!</p>
-            <button type="button" class="btn-iniciar">INICIAR</button>
+            <a href="/primPergunta"><button class="btn-iniciar">INICIAR</button></a>
             <img src="{{ asset('img/undraw_safe.svg') }}">
         </div>
     </div>

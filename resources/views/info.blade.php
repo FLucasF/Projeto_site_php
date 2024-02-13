@@ -13,17 +13,17 @@
         <img src="{{ asset('img/undraw_annotation.svg') }}" alt="">
         <div class="btn-text">
             <div class="description">
-                <button class="btn-pontos">Últimas pontuações</button>
+                <a href="/"><button class="btn-avaliacao">Últimas pontuações</button></a>
             </div>
         </div>
         <div class="btn-text">
             <div class="description">
-                <button class="btn-site">Visite nosso site</button>
+                <a href="/"><button class="btn-avaliacao">Visite nosso site</button></a>
             </div>
         </div>
         <div class="btn-text">
             <div class="description">
-                <button class="btn-avaliacao">Avaliação do Quiz</button>
+                <a href="/"><button class="btn-avaliacao">Avaliação do Quiz</button></a>
             </div>
         </div>
     </div>
