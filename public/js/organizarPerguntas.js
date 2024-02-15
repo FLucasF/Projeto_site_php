@@ -30,7 +30,7 @@ function verificacao($resposta, $respostaCorreta) {
 
     } else {
         Toastify({
-            text: "This is a toast",
+            text: "testando",
             duration: 3000,
             destination: "https://github.com/apvarun/toastify-js",
             newWindow: true,
