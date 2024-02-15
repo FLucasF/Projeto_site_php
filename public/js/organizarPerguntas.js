@@ -24,7 +24,10 @@ function verificacao($resposta, $respostaCorreta) {
         pontuacao = parseInt(pontuacao) + 20;
         localStorage.setItem('pontuacao', pontuacao.toString());
         //MUDANDO DE PÁGINA, MAS COMO FAZER ISSO PARA MUDAR PARA ''PRÓXIMA''?
-        window.location.replace('/segPergunta');
+        setTimeout(() => {
+            window.location.replace('/segPergunta');
+        }, 2000);
+
     } else {
         Toastify({
             text: "This is a toast",
